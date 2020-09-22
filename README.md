@@ -21,23 +21,23 @@ Expected Input -  START<br>
 
 Expected Output - <br>
 A JSON of the following structure:<br>
-'''
+```
 {
     "message" : "READY",
     "token" : <token>
 }
-'''
+```
 
 **For playing the game**<br><br>
 URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)<br>
 Expected Input -<br>
 A JSON of the following structure:<br>
-'''
+```
 {
     "token" : <token>,
     "col" : <col>
 }
-'''
+```
 * Note 1: token is the string returned by the start API. Copy the token and paste the value 
 * Note 2: col is an integer ranging from 0-6 representing the move. Any other value would return a response "Invalid move" <br>
 
