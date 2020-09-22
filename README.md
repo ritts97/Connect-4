@@ -70,7 +70,7 @@ A JSON of the following structure:<br>
 
 **For playing the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)<br>
-Request Type - GET
+Request Type - GET<br>
 Expected Input -<br>
 A JSON of the following structure:<br>
 ```
