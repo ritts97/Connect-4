@@ -17,25 +17,25 @@ Write the data to be sent as 'raw'
 **For starting the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/start](obscure-spire-16178.herokuapp.com/start)<br>
 Expected Input -  START<br>
-* Note: Just the word 'START' is expected as raw data without any quotes or brackets *
+* Note: Just the word 'START' is expected as raw data without any quotes or brackets
 
 Expected Output - <br>
 A JSON of the following structure:<br>
 {<br>
-    "message" : "READY",<br>
-    "token" : <token><br>
+<t>    "message" : "READY",<br>
+<t>    "token" : <token><br>
 }
 
-**For playing the game**
+**For playing the game**<br><br>
 URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)<br>
-Expected Input -
-A JSON of the following structure:
-{
-    "token" : <token>,
-    "col" : <col>
-}
-_ Note 1: token is the string returned by the start API. Copy the token and paste the value _
-_ Note 2: col is an integer ranging from 0-6 representing the move. Any other value would return a response "Invalid move" _
+Expected Input -<br>
+A JSON of the following structure:<br>
+{<br>
+    "token" : <token>,<br>
+    "col" : <col><br>
+}<br>
+* Note 1: token is the string returned by the start API. Copy the token and paste the value 
+* Note 2: col is an integer ranging from 0-6 representing the move. Any other value would return a response "Invalid move" <br>
 
 Expected Output - 
 For each move, one of the following is returned:
