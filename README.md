@@ -5,7 +5,7 @@ A Flask and MongoEngine based backend for the game Connect - 4
 
 ### For sending requests to the deployed app:
 
-The app is deployed at [obscure-spire-16178.herokuapp.com](obscure-spire-16178.herokuapp.com).<br>
+The app is deployed at [obscure-spire-16178.herokuapp.com](obscure-spire-16178.herokuapp.com).<br><br>
 **Postman settings:**
 1. Header
 Key - Content-Type
@@ -16,14 +16,14 @@ Write the data to be sent as 'raw'
 
 **For starting the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/start](obscure-spire-16178.herokuapp.com/start)<br>
-Expected Input -  START
-_ Note: Just the word 'START' is expected as raw data without any quotes or brackets _
+Expected Input -  START<br>
+* Note: Just the word 'START' is expected as raw data without any quotes or brackets *
 
-Expected Output - 
-A JSON of the following structure:
-{
-    "message" : "READY",
-    "token" : <token>
+Expected Output - <br>
+A JSON of the following structure:<br>
+{<br>
+    "message" : "READY",<br>
+    "token" : <token><br>
 }
 
 **For playing the game**
