@@ -76,6 +76,8 @@ def start():
             return jsonify(resp)
         else:
             return "Invalid keyword! To start the game, send START"
+    except KeyError:
+        raise KeyError
     except Exception as e:
         raise InternalServerError
 
@@ -116,5 +118,31 @@ def getMoves():
                             return "Red made a move"
                 else:
                     return "Invalid move!"
+    except Exception as e:
+        raise InternalServerError
+
+@app.route('/getmoves')
+def getMoveInfo():
+    try:
+        body = request.get_json(force=True)
+        token = body['token']
+        if token == session['token']:
+            field = Moves.objects.get(token = token)
+            return jsonify(field['moves'])
+    except KeyError:
+        raise KeyError
+    except Exception as e:
+        raise InternalServerError
+
+@app.route('/getmoves')
+def getMoveInfo():
+    try:
+        body = request.get_json(force=True)
+        token = body['token']
+        if token == session['token']:
+            field = Moves.objects.get(token = token)
+            return jsonify(field['moves'])
+    except KeyError:
+        raise KeyError
     except Exception as e:
         raise InternalServerError
