@@ -16,6 +16,7 @@ Write the data to be sent as 'raw'
 
 **For starting the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/start](obscure-spire-16178.herokuapp.com/start)<br>
+Request Type - GET <br>
 Expected Input -  START<br>
 * Note: Just the word 'START' is expected as raw data without any quotes or brackets
 
@@ -30,6 +31,7 @@ A JSON of the following structure:<br>
 
 **For playing the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)<br>
+Request Type - GET
 Expected Input -<br>
 A JSON of the following structure:<br>
 ```
@@ -51,6 +53,7 @@ For each move, one of the following is returned:
 
 **For getting a list of moves made**<br>
 URL - [obscure-spire-16178.herokuapp.com/getmoves](obscure-spire-16178.herokuapp.com/getmoves)<br>
+Request Type - GET <br>
 Expected Input -<br>
 A JSON of the following structure:<br>
 ```
