@@ -1,11 +1,11 @@
 # Connect-4
 A Flask and MongoEngine based backend for the game Connect - 4
 
-### Instructions for running the app:
+## Instructions for running the app:
 
-##### For sending requests to the deployed app:
+### For sending requests to the deployed app:
 
-The app is deployed at [obscure-spire-16178.herokuapp.com](obscure-spire-16178.herokuapp.com).
+The app is deployed at [obscure-spire-16178.herokuapp.com](obscure-spire-16178.herokuapp.com).<br>
 **Postman settings:**
 1. Header
 Key - Content-Type
@@ -14,8 +14,8 @@ Value - application/json
 2. Body
 Write the data to be sent as 'raw'
 
-**For starting the game**
-URL - [obscure-spire-16178.herokuapp.com/start](obscure-spire-16178.herokuapp.com/start)
+**For starting the game**<br>
+URL - [obscure-spire-16178.herokuapp.com/start](obscure-spire-16178.herokuapp.com/start)<br>
 Expected Input -  START
 _ Note: Just the word 'START' is expected as raw data without any quotes or brackets _
 
@@ -27,7 +27,7 @@ A JSON of the following structure:
 }
 
 **For playing the game**
-URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)
+URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)<br>
 Expected Input -
 A JSON of the following structure:
 {
@@ -63,11 +63,9 @@ A JSON of the following structure:
 ]
 It returns a list of all the moves made by each player in the order of the moves made.
 
-##### For running the app locally:
+### For running the app locally:
 
-'''
-pip3 install requirements.txt
-flask run
-'''
+1. pip3 install requirements.txt
+2. flask run
 
 
