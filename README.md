@@ -28,7 +28,7 @@ A JSON of the following structure:<br>
 }
 ```
 
-**For playing the game**<br><br>
+**For playing the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/makemoves](obscure-spire-16178.herokuapp.com/makemoves)<br>
 Expected Input -<br>
 A JSON of the following structure:<br>
@@ -49,27 +49,33 @@ For each move, one of the following is returned:
 4. If yellow wins - "Yellow wins!"
 5. If red wins - "Red wins!"
 
-**For getting a list of moves made**
-URL - [obscure-spire-16178.herokuapp.com/getmoves](obscure-spire-16178.herokuapp.com/getmoves)
-Expected Input -
-A JSON of the following structure:
+**For getting a list of moves made**<br>
+URL - [obscure-spire-16178.herokuapp.com/getmoves](obscure-spire-16178.herokuapp.com/getmoves)<br>
+Expected Input -<br>
+A JSON of the following structure:<br>
+```
 {
     "token" : <token>
 }
+```
 
-Expected Output -
-A JSON of the following structure:
+Expected Output -<br>
+A JSON of the following structure:<br>
+```
 [
     {
         "Col" : <col>,
         "Player" : <player>
     }
 ]
+```
+<br>
 It returns a list of all the moves made by each player in the order of the moves made.
 
 ### For running the app locally:
-
-1. pip3 install requirements.txt
-2. flask run
+```
+pip3 install requirements.txt
+flask run
+```
 
 
