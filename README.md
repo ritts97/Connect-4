@@ -46,11 +46,11 @@ Connect-4
 
 The app is deployed at [obscure-spire-16178.herokuapp.com](obscure-spire-16178.herokuapp.com).<br><br>
 **Postman settings:**
-1. Header
-Key - Content-Type
+1. Header<br>
+Key - Content-Type<br>
 Value - application/json
 
-2. Body
+2. Body<br>
 Write the data to be sent as 'raw'
 
 **For starting the game**<br>
