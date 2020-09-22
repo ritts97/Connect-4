@@ -101,9 +101,9 @@ def getMoves():
                         if isWinning(matrix, 1):
                             field.modify(gameValid = False, winner = "Yellow")
                             field.save()
-                            return "Yellow wins!"
+                            return "Yellow wins"
                         else:
-                            return "Yellow made a move"
+                            return "Valid"
 
                     else:
                         makeMove(matrix, row, col, 2)
@@ -113,11 +113,11 @@ def getMoves():
                         if isWinning(matrix, 2):
                             field.modify(gameValid = False, winner = "Yellow")
                             field.save()
-                            return "Red wins!" 
+                            return "Red wins" 
                         else:
-                            return "Red made a move"
+                            return "Valid"
                 else:
-                    return "Invalid move!"
+                    return "Invalid"
     except Exception as e:
         raise InternalServerError
 

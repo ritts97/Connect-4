@@ -80,15 +80,15 @@ A JSON of the following structure:<br>
 }
 ```
 * Note 1: token is the string returned by the start API. Copy the token and paste the value 
-* Note 2: col is an integer ranging from 0-6 representing the move. Any other value would return a response "Invalid move" <br>
+* Note 2: col is an integer ranging from 0-6 representing the move. Any other value would return a response "Invalid" <br>
 
 Expected Output - 
 For each move, one of the following is returned:
-1. If invalid move is made - "Invalid move!"
-2. If yellow makes a move - "Yellow made a move"
-3. If red makes a move - "Red made a move"
-4. If yellow wins - "Yellow wins!"
-5. If red wins - "Red wins!"
+1. If invalid move is made - "Invalid"
+2. If yellow makes a move - "Valid"
+3. If red makes a move - "Valid"
+4. If yellow wins - "Yellow wins"
+5. If red wins - "Red wins"
 
 **For getting a list of moves made**<br>
 URL - [obscure-spire-16178.herokuapp.com/getmoves](obscure-spire-16178.herokuapp.com/getmoves)<br>
