@@ -80,5 +80,5 @@ It returns a list of all the moves made by each player in the order of the moves
 pip3 install requirements.txt
 flask run
 ```
-####The folder 'screenshots' contains the screenshots of testing the app on Postman
+#### The folder 'screenshots' contains the screenshots of testing the app on Postman
 
