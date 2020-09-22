@@ -51,7 +51,7 @@ Key - Content-Type<br>
 Value - application/json
 
 2. Body<br>
-Write the data to be sent as 'raw'
+Write the data to be sent in the 'raw' area
 
 **For starting the game**<br>
 URL - [obscure-spire-16178.herokuapp.com/start](obscure-spire-16178.herokuapp.com/start)<br>
