@@ -1,6 +1,45 @@
 # Connect-4
 A Flask and MongoEngine based backend for the game Connect - 4
 
+## Directory structure:
+```
+Connect-4
+├── app
+│   ├── configuration
+│   │   ├── config.py
+│   │   ├── db.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── config.cpython-38.pyc
+│   │       ├── db.cpython-38.pyc
+│   │       └── __init__.cpython-38.pyc
+│   ├── __init__.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   ├── Moves.py
+│   │   └── __pycache__
+│   │       ├── __init__.cpython-38.pyc
+│   │       └── Moves.cpython-38.pyc
+│   ├── __pycache__
+│   │   └── __init__.cpython-38.pyc
+│   └── utilities
+│       ├── errors.py
+│       ├── __init__.py
+│       └── __pycache__
+│           ├── errors.cpython-38.pyc
+│           └── __init__.cpython-38.pyc
+├── Procfile
+├── README.md
+├── requirements.txt
+├── run.py
+├── screenshots
+│   ├── Get moves API call.png
+│   ├── Make moves API call.png
+│   ├── Postman settings.png
+│   ├── Running on localhost.png
+│   └── Start API call.png
+└── url.txt
+```
 ## Instructions for running the app:
 
 ### For sending requests to the deployed app:
